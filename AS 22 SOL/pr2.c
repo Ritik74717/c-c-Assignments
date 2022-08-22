@@ -23,6 +23,8 @@ int main()
    printf("\n");
    avg=(float)sum/x;
    printf("Average = %f\n",avg);
+   free(p);
+  
    return 0;
 
 
