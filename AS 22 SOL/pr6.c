@@ -27,7 +27,7 @@ int main()
 
   }
   printf("max=%d",max);
-
+  free(p);
 
 
 
