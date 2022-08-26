@@ -2,13 +2,17 @@
 #include<stdlib.h>
 int main()
 {
-   int *p,x,sum=0;
+   int *p,x,sum=0,i;
    float avg;
    printf("enter array size\n");
    scanf("%d",&x);
    printf("Enter %d values\n",x);
    p=(int*)calloc(x,sizeof(int));
-   int i;
+   if(p==NULL)
+   {
+      printf("Memory allocation failed\n");
+      return 0;
+   }
    for(i=0;i<x;i++)
    {
        scanf("%d",p+i);
