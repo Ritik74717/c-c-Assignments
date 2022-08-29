@@ -18,10 +18,6 @@ int main()
     cout<<"Area of Triangle is "<<(float)area(ba,h);
     return 0;
 
-
-
-
-    return 0;
 }
 float area(int r)
 {
