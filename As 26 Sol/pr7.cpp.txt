@@ -1,0 +1,28 @@
+#include<iostream>
+using namespace std;
+class Box
+{
+  private:
+        int l,b,h;
+  public:
+       Box(int a,int k,int c)
+       {
+        l=a;
+        b=k;
+        h=c;
+       }
+       void volume()
+       {
+         cout<<"Volume = "<<l*b*h;
+
+       }
+
+};
+int main()
+{
+    Box b1(10,5,15);
+    b1.volume();
+    return 0;
+
+
+}

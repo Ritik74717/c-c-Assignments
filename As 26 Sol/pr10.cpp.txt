@@ -1,0 +1,31 @@
+#include<iostream>
+using namespace std;
+class StaticCount
+{
+  private:
+            static int n;
+        
+  public:
+      static void set( int x)
+       {
+          n=x;
+       }
+       static int show()
+       {
+        return n++;
+       }
+
+};
+
+ int StaticCount :: n;
+ 
+int main()
+{
+   StaticCount::set(5);
+   cout<<StaticCount::show()<<endl;
+   cout<<StaticCount::show()<<endl;
+   cout<<StaticCount::show()<<endl;
+   
+   return 0;
+
+}

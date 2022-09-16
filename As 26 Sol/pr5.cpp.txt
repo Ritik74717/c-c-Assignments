@@ -1,0 +1,35 @@
+#include<iostream>
+using namespace std;
+class Date
+{
+   private:
+       int d,m,y;
+    public:
+        Date()
+        {
+            d=0;
+            m=0;
+            y=0;
+            cout<<"Constructor Initialized\n";
+        }
+       void set(int a,int b,int c)
+       {
+          d=a;
+          m=b;
+          y=c;
+
+       }
+       void show()
+       {
+         cout<<" Date = "<<d<<" Month = "<<m<<" Year = "<<y<<endl;
+
+       }
+
+};
+ int main()
+ {
+     Date d1;
+     d1.set(4,5,2000);
+     d1.show();
+     return 0;
+ }

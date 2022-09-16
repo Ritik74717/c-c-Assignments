@@ -1,0 +1,49 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+class Bill
+{
+   private:
+         char name[10];
+         int unit;
+   public:
+        void set(char n[10],int u)
+      {
+          strcpy(name,n);
+          unit = u;
+        }
+        void calc()
+      { 
+          float bill;
+          if(unit>0 && unit<=100)
+          {
+            bill = unit*1.20;
+            cout<<"Bill = "<<bill<<endl;
+          }
+          else if(unit>100 && unit<=200)
+          {
+            bill = unit*2;
+            cout<<"Bill = "<<bill<<endl;
+          }
+          else
+          {
+            bill = unit*3;
+            cout<<"Bill = "<<bill<<endl;
+          }
+      }
+        void show()
+        {
+          cout<<name<<endl;
+          cout<<unit<<endl;
+        }
+
+};
+int main()
+{
+  Bill b1;
+  b1.set("Ritik",205);
+  b1.show();
+  b1.calc();
+  return 0;
+  
+}

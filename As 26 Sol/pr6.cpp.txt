@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class Student
+{
+   private:
+         int marks;
+         char grade;
+   public:
+       Student(int m,char g)
+       {
+        marks =m;
+        grade =g;
+       }
+       void show()
+       {
+        cout<<"\nMarks = "<<marks<<" Grade = "<<grade;
+       }
+};
+int main()
+{
+  Student S1(65,'A');
+  S1.show();
+
+}

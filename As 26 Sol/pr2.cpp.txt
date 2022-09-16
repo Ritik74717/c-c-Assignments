@@ -1,0 +1,44 @@
+#include<iostream>
+using namespace std;
+class Time
+{
+    private:
+         int h,m,s;
+    public:
+         void set(int x,int y,int z)
+         {
+            h=x;
+            m=y;
+            s=z;
+         }
+         void show()
+         {
+            cout<<"H = "<<h<<" M = "<<m<<" S = "<<s<<endl;
+
+         }
+
+         Time add(Time T)
+         {
+           Time time;
+           time.h = h + T.h;
+           time.m = m + T.m;
+           time.s = s + T.s;
+           return time;
+
+         }
+
+
+};
+
+int main()
+{
+   Time t1,t2,t3;
+   t1.set(4,12,32);
+   t2.set(6,20,38);
+   t1.show();
+   t2.show();
+   t3 = t1.add(t2);
+   t3.show();
+   return 0;
+
+}

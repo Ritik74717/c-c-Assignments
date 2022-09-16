@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+class Bank
+{
+   private:
+         float p,r,t;
+    public:
+         Bank()
+         {
+            p=0;
+            r=0;
+            t=0;
+         }
+         void set(int x,int y,int z)
+         {
+              p=x;
+              r=y;
+              t=z;
+         }
+         void calc()
+         {
+            float si;
+            si = (p*r*t)/100;
+            cout<<si<<endl;
+
+         }
+
+  
+};
+int main()
+{
+    Bank b1;
+    b1.set(75,5,2);
+    b1.calc();
+    return 0;
+
+}
