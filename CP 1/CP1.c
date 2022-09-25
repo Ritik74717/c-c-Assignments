@@ -1,27 +1,32 @@
-#include<stdio.h>
+#include<iostream>
+using namespace std;
+int pallindrome(int x)
+{
+    int temp =x,rem=0,rev=0;
+
+    while(temp!=0)
+    {
+        rem = temp%10;
+        rev = (rev*10) + rem;
+        temp = temp/10;
+    }
+    if(rev==x)
+        return 1;
+    else
+        return 0;
+}
 int main()
 {
-    int a,b,c,n,sum;
-    printf("Enter a Number\n");
-    scanf("%d",&n);
-    a=n;
-     //121
-    
-        b=n%10; //1
-        b= b*100;
-        n=n/10; //12
-        c=n%10; //2
-        c=c*10;
-        n=n/10; //1
-        sum = b+c+n;
-        if(sum==a)
-        printf("True\n");
-        else
-        printf("False\n");
-    
-        return 0;
+    int x=12121;
+    if(x<0)
+    {cout<<"false";
+      return 0;}
+    if(pallindrome(x))
+    {
+        cout<<"true";
+    }
+    else
+        cout<<"false";
+    return 0;
 
-
-
-    
 }
