@@ -14,6 +14,7 @@ int main()
     else{
         cout<<"File not created\n";
     }
+    fout.close();
     return 0;
     
 }
