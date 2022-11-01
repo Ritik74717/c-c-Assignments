@@ -13,6 +13,6 @@ void swapnum(T1 x,T2 y)
 int main()
 {
 
-    swapnum(10,20);
+    swapnum<int,int>(10,20);
     return 0;
 }
