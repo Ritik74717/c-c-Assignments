@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 class item
 {
@@ -18,9 +19,9 @@ public:
       cout<<"\nITEM DETAILS";
         cout<<"\nEnter item-no :";
         cin>>item_no;
+        cin.ignore();
         cout<<"\nEnter item name :";
-        cin>>item_name;
-        fflush(stdin);
+        getline(cin,item_name);
         cout<<"\nEnter price :";
         cin>>price;
         cout<<"\nEnter Discount :";
